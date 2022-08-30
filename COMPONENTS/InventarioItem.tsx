@@ -1,11 +1,11 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
-import stylesText from './stylesText'
+import StylesText from "./stylesText";
 
 const InventarioItem = (Props) => (
   <View key={Props.id} style={Styles.container}>
-    <Text>ID: {Props.id}</Text>
-    <Text>Medicamento: {Props.nombreMedicamento}</Text>
+    <StylesText estilo="vencido" children={Props.id} type='ID'/>
+    <StylesText estilo="vencido" children={Props.nombreMedicamento} type='Medicamento'/>
     <Text>Descripcion: {Props.description}</Text>
     <Text>Horario: {Props.totalesDiarias}</Text>
     <Text>Inventario: {Props.inventarioActual}</Text>
