@@ -1,14 +1,16 @@
 import React from "react";
 import Constants from "expo-constants";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import InventarioLista from "./inventarioLista";
+import AppBar from "./AppBar";
 
-const main = () => {
+const Main = () => {
   return (
-    <View style={{ marginTop: Constants.statusBarHeight, flexGrow: 1 }}>
+    <View style={{flex: 1 }}>
+      <AppBar/>
       <InventarioLista />
     </View>
   );
 };
 
-export default main;
+export default Main;
