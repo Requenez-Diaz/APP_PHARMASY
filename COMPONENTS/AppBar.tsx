@@ -21,4 +21,4 @@ const start = StyleSheet.create ({
     }
 })
 
-export default AppBar
+export default AppBar;

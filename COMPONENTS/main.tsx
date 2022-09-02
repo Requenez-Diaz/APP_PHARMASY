@@ -1,8 +1,7 @@
 import React from "react";
-import Constants from "expo-constants";
 import { View } from "react-native";
-import InventarioLista from "./inventarioLista";
 import AppBar from "./AppBar";
+import InventarioLista from './InventarioLista'
 
 const Main = () => {
   return (
