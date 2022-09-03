@@ -18,7 +18,7 @@ import { Text } from "react-native";
   
   const InventarioStats = ({totalesDiarias, inventarioActual, ventasDiarias, precio, vencidas}: Props) => {
     return (
-      <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
+      <View style={{backgroundColor :'white', borderRadius:5, padding:8, margin:4,flexDirection: "row", justifyContent: "space-around" }}>
         <View>
           <Text style={{textAlign: 'center', color: 'blue', fontWeight: 'bold' }}>Horario:</Text>
           <Text>{totalesDiarias}</Text>

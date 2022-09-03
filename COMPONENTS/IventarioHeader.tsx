@@ -12,9 +12,10 @@ interface Props {
   
   const InventarioHeader = ({ ownerAvatarUrl, nombre, id, nombreMedicamento, description, }: Props)  => {
     return(
-        <View style={{ flexDirection: "row", paddingBottom: 2 }}>
+      <View>
+          <View style={{ flexDirection: "row", paddingBottom: 6 }}>
             <View style={{ paddingRight: 10 }}>
-                <Image style={Styles.image} source={{ uri: ownerAvatarUrl }} />
+              <Image style={Styles.image} source={{ uri: ownerAvatarUrl }} />
             </View>
             <View style={{ flex: 1 }}>
                 <Text style={Styles.container2}>Nombre Farmacia</Text>
@@ -27,7 +28,9 @@ interface Props {
                 />
                 <Text>Descripcion: {description}</Text>
             </View>
-        </View>
+          </View>
+      </View>
+        
     );
   }
 
@@ -46,12 +49,13 @@ interface Props {
       borderRadius: 4,
     },
     container2: {
+
       fontWeight: "bold",
-      padding: 4,
+      padding: 5,
       color: "blue",
       alignSelf: "flex-start",
-      backgroundColor: "skyblue",
-      borderRadius: 4,
+      backgroundColor: "#ffeb3b",
+      borderRadius: 3,
       overflow: "hidden",
     },
   });

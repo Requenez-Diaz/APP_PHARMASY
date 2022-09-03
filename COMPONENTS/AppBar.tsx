@@ -7,8 +7,8 @@ import Constant from 'expo-constants';
 
 const AppBar = () => {
     return (
-        <View style={{ backgroundColor: '#E85540', paddingTop: Constant.statusBarHeight + 10,
-        paddingBottom: 10, paddingLeft: 10}}>
+        <View style={{ backgroundColor: '#009688', paddingTop: Constant.statusBarHeight + 10,
+        paddingBottom: 10, paddingLeft: 10, shadowColor:'white',}}>
             <Text style={{ fontWeight: 'bold'}}>
                 Inventarios Farmacias
             </Text>
