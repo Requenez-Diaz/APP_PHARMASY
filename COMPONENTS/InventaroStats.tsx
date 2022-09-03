@@ -2,11 +2,11 @@ import React from "react";
 import { View } from "react-native";
 import { Text } from "react-native";
 
-/*const parseThousands = value => {
+const parseThousands = (value: number) => {
     return value >= 2000
     ? `${Math.round(value / 100) / 10 }K`
     : String(value)
-  }*/
+  }
   
   interface Props {
     totalesDiarias: number,
@@ -29,7 +29,7 @@ import { Text } from "react-native";
         </View>
         <View>
           <Text style={{textAlign: 'center', color: '#FFB533', fontWeight: 'bold' }} >Ventas Diarias</Text>
-          <Text style={{textAlign: 'center', color: '#33DDFF', fontWeight: 'bold' }} >{/*parseThousands*/(ventasDiarias)}</Text>
+          <Text style={{textAlign: 'center', color: '#33DDFF', fontWeight: 'bold' }} >{parseThousands(ventasDiarias)}</Text>
         </View >
         <View>
           <Text style={{textAlign: 'center', color: 'green', fontWeight: 'bold' }} >Precio</Text>

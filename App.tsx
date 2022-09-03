@@ -4,6 +4,6 @@ import Main from './COMPONENTS/Main'
 
 export default function App() {
   return(
-    <Main /> 
+    <Main/> 
   );
 }

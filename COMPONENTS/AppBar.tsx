@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
-import StylesText from './stylesText';
 import Constant from 'expo-constants';
 
 
